@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ThousandSeparators.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:ThousandSeparators.Controls">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+            <Image
+                Aspect="AspectFit"
+                HeightRequest="185"
+                SemanticProperties.Description="dot net bot in a hovercraft number nine"
+                Source="dotnet_bot.png" />
+
+            <controls:CurrencyEntry
+                HorizontalOptions="Fill"
+                Keyboard="Numeric"
+                Placeholder="Amount"
+                UseSeparator="True" />
+
+            <!--<Editor HeightRequest="150" Placeholder="Description" />-->
+
+            <Button
+                x:Name="CounterBtn"
+                HorizontalOptions="Fill"
+                Text="Submit" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
