@@ -16,7 +16,7 @@ namespace ThousandSeparators
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-            Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping("CustomTextWatcher", (handler, view) =>
+            Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping("CurrencyTextWatcher", (handler, view) =>
             {
 #if ANDROID
                 if (view is CurrencyEntry entry)
