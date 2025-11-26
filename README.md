@@ -6,6 +6,7 @@ Thousand Separators in .Net Maui Entry
 How to use:
 
 Add the ThousandSeparators.dll to your project's dependencies, and call UseThousandSeparators() method on MauiAppBuilder in MauiProgram.cs
+
 Then in Xaml file declare a namespace like this:
 ```
 xmlns:entries="clr-namespace:ThousandSeparators.Controls;assembly=ThousandSeparators"
