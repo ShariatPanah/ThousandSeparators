@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace ThousandSeparators
+namespace ThousandSeparators.Sample
 {
     [Application]
     public class MainApplication : MauiApplication

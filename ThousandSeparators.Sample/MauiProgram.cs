@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using ThousandSeparators.Controls;
 
-namespace ThousandSeparators
+namespace ThousandSeparators.Sample
 {
     public static class MauiProgram
     {
@@ -10,23 +10,12 @@ namespace ThousandSeparators
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseThousandSeparators()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
-
-            Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping("CurrencyTextWatcher", (handler, view) =>
-            {
-#if ANDROID
-                if (view is CurrencyEntry entry)
-                {
-                    handler.PlatformView.EmojiCompatEnabled = false;
-                    var editText = handler.PlatformView;
-                    editText.AddTextChangedListener(new Platforms.Android.Controls.CurrencyTextWatcher(editText, entry.UseSeparator));
-                }
-#endif
-            });
 
 #if DEBUG
             builder.Logging.AddDebug();

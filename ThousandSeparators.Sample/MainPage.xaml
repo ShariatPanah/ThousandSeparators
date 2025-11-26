@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="ThousandSeparators.MainPage"
+    x:Class="ThousandSeparators.Sample.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:controls="clr-namespace:ThousandSeparators.Controls">
+    xmlns:controls="clr-namespace:ThousandSeparators.Controls;assembly=ThousandSeparators">
 
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="25">
@@ -18,8 +18,6 @@
                 Keyboard="Numeric"
                 Placeholder="Amount"
                 UseSeparator="True" />
-
-            <!--<Editor HeightRequest="150" Placeholder="Description" />-->
 
             <Button
                 x:Name="CounterBtn"

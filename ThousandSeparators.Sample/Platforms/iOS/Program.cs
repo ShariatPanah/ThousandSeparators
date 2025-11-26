@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace ThousandSeparators
+namespace ThousandSeparators.Sample
 {
     public class Program
     {

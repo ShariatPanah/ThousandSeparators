@@ -2,7 +2,7 @@ using System;
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
-namespace ThousandSeparators
+namespace ThousandSeparators.Sample
 {
     internal class Program : MauiApplication
     {

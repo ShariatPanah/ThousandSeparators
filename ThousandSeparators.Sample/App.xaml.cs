@@ -1,4 +1,4 @@
-﻿namespace ThousandSeparators
+﻿namespace ThousandSeparators.Sample
 {
     public partial class App : Application
     {
